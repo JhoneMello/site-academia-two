@@ -1,0 +1,329 @@
+
+/* Importa a fonte Montserrat do google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Six+Caps&display=swap');
+
+/* Variaves */
+
+/* Paleta de cores */
+
+:root {
+    /* Paleta de cores */
+    --cor-principal: #8a1a9e;
+    --cor-destaque: #d000f0;
+    --cor-01: #f9f9f9;
+    --cor-02: #cfcfcf;
+    --cor-03: #2c2e32;
+    --cor-04: #232323;
+    --cor-05: #000000;
+    --cor-06: #42454a;
+    --cor-07: #000000ad;
+    --cor-08: #006aff;
+}
+
+
+
+/* Reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+   font-family: "Montserrat",serif;
+   font-size: 16px;
+   scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--cor-03);
+    color: var(--cor-02);
+}
+
+p{
+    margin: 1rem 0;
+    margin-bottom: 30px;
+}
+
+nav{
+    padding: 1rem;
+    position: fixed;
+    width:100%;
+    z-index: 100;
+    background-color: var(--cor-07);
+    color: #d000f0;
+    
+    }
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 0.3ram;
+    list-style-type: none;
+}
+
+nav a{
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--cor-01);
+    font-weight: 700;
+    font: size 1.2rem;
+    letter-spacing: 0.0625rem;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color: var(--cor-destaque);
+}
+
+/* bunner */
+header{
+    position: relative;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    text-shadow: 0.1rem 0.1rem 0.5rem       var(--cor-05);
+   
+}
+    
+
+header span{
+    color: var(--cor-destaque);
+}
+header p{
+    font-size: 2rem;
+}
+
+.cover{
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/banner.jpg');
+    background-size: 100%;
+    filter: brightness(30%);
+}
+
+.sbv{
+    font-family: "Be Vietnam Pro", sans-serif;
+   
+}
+
+main{
+    padding: 2rem 3rem;
+    }
+
+    main p{
+        text-align: justify;
+    }
+
+    section{
+        min-height: 80vh;
+        padding-top: 6rem;     
+    }
+
+    #modalidades, #planos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap:3rem;
+        margin-top: 8rem;
+        padding: inherit 3rem;
+    }
+       
+    .card-modalidade {
+        /* height: 400px; */
+        /* overflow: hidden; */
+    }
+       
+
+    .card-modalidade img{
+        width: 100%;
+    }
+
+    .card-modalidade div{
+        padding: 1rem;
+    }
+
+    .card-modalidade:hover, .card-plano1:hover, .card-plano2:hover, .card-plano3:hover {
+       
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 0 0 0.5rem 0.2rem var(--cor-04);
+        transition: 0.3s;
+        border-radius: 0.5rem;
+
+    }
+    
+
+    .card-plano1{
+        background-image: url(file:///C:/Users/JhoneMello/Documents/FS24/site-academia-teste/img/fundoplano%205.1.svg);
+        
+        padding: 2rem;
+        width: 100%;
+        /* background-color: var(--cor-01); */
+        /* color: var(--cor-04); */
+        color: var(--cor-01);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+        
+    }
+
+    .card-plano2{
+        background-image: url(file:///C:/Users/JhoneMello/Documents/FS24/site-academia-teste/img/fundoplano%206.3.3.svg);
+        
+        padding: 2rem;
+        width: 100%;
+        color: var(--cor-01);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+       
+
+    .card-plano3{
+        background-image: url(file:///C:/Users/JhoneMello/Documents/FS24/site-academia-teste/img/fundoplano%206.svg);
+        
+        padding: 2rem;
+        width: 100%;
+        color: var(--cor-01);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+    }
+
+
+    .card-plano1 h1,.card-plano2 h1,.card-plano3 h1 {
+        font-size: 2.5rem;
+        margin: auto;
+
+    }
+
+    .card-plano1 h2,.card-plano2 h2,.card-plano3 h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .plus-title {
+        color: #00ffff;
+    }
+
+    .premium-title {
+        /* color: var(--cor-principal); */
+        color: var(--cor-destaque);
+    }
+
+    button {
+        background-color: inherit;
+        padding: 0.8rem;
+        border-radius: 3rem;
+        border: solid 0.1rem var(--cor-02);
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+        transition: 0.3s ease;
+        color: var(--cor-01);
+     }
+
+     button:hover {
+        background-color: var(--cor-destaque);
+        color: var(--cor-01);
+        cursor: pointer;
+        border: solid 0.2rem var(--cor-destaque);
+     }
+
+    form {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+       
+    }
+    
+    
+    h1{
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-weight: 800;
+        margin-bottom: auto;
+        font-size: 30px;
+    }
+       
+    span{
+        color: var(--cor-destaque);
+    }
+        
+    form div {
+        display: flex;
+        gap: 0.8rem;
+    }
+        
+    
+    input {
+        background-color: #313946;
+        border-radius: 0.5rem;
+        border: none;
+        width: 100%;
+        padding: 3% 4%;
+    }
+       
+    
+    .formbutton {
+        background-color: #303845;
+        color: #7b7d83;
+        width: 12rem;
+        height: 2.5rem;
+        margin: auto;
+        font-family: "Be Vietnam Pro", sans-serif;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 1.5rem;
+        border: none;
+    }
+     /* .formbutton:hover{
+        background-color: #cfcfcf;
+        border: none;
+        color: var(--cor-destaque);
+     } */
+
+    
+    textarea{
+        background-color: #313946;
+        border: none;
+        width: 100%;
+        height: 15rem;
+        border-radius: 8px;
+        display: flex;
+        font-size: 12px;
+        font-family: "Be Vietnam Pro", sans-serif;
+        padding: 3% 4%;
+        
+    }
+
+#mapa{
+    /* width: 100%; */
+    height: 95vh;
+    margin-top: 5rem;
+}
+    
+
+#mapa iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
