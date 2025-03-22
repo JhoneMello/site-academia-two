@@ -39,8 +39,8 @@ html{
 body{
     background-color: var(--cor-03);
     color: var(--cor-02);
+    
 }
-
 p{
     margin: 1rem 0;
     margin-bottom: 30px;
@@ -95,6 +95,13 @@ header{
 header span{
     color: var(--cor-destaque);
 }
+
+section span{
+    color: var(--cor-destaque);
+    font-family: "Be Vietnam Pro", sans-serif;
+    font-size: 20px;
+
+}
 header p{
     font-size: 2rem;
 }
@@ -125,7 +132,7 @@ main{
     }
 
     section{
-        min-height: 80vh;
+        min-height: 70vh;
         padding-top: 6rem;     
     }
 
