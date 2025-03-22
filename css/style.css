@@ -327,3 +327,55 @@ main{
     border-radius: 0.5rem;
 }
 
+footer{
+    background-color:var(--cor-05);
+    display: flex;
+    text-align: left;
+    padding: 3rem 3rem;
+    /* margin-top: 5rem; */
+    gap: 10rem;
+    /* border: solid 1px yellow; */
+    
+}
+
+footer h4{
+    margin-top: 30px;
+}
+
+footer p{
+   font-size: 0.8rem;
+   text-indent: 1px;
+}
+
+footer section{
+    margin-bottom: 15rem;
+}
+
+.newslitter{
+    display: flex;
+    gap: 1rem;
+
+}
+
+.newslitter{
+    margin-top: 30px;
+}
+
+footer hr{
+    margin-top: 30px;
+}
+
+.redes{
+   margin-top: 30px;
+}
+ 
+footer button{
+    border-radius: 3px;
+    color: yellow;
+}
+
+footer input{
+    width: 300px;
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+}
